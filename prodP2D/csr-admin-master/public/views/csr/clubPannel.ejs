@@ -1,0 +1,155 @@
+<%- include('includes/header.ejs') %>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <%- include('includes/sidebar.ejs') %>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <%- include('includes/topbar.ejs') %>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800" id="clubPannel">Club Panel</h1>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item my-auto">
+                <a class="m-lg-4 my-font text-black text-center" aria-current="page" href="#">
+                  <select id="languageSelect" onchange="clubPannel()" style="border:none">
+                    <option value="en">English</option>
+                    <option value="chi">Chinese</option>
+                  </select>
+                </a>
+              </li>
+              </ul>
+
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <div class="d-flex justify-content-center align-items-center h-90">
+              <div class="rounded shadow m-3 container">
+                <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="row justify-content-center" style="margin-top:2rem;">
+                      <div class="col-md-auto align-self-center">
+                        <div class="row justify-content-center btn-des">
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                      <div class="my-md-5" style="margin-top: 0.7rem;">
+                        <h2 class="text-center text-black my-font" id="mtt"><span id="clubCreation">Club Creation Process</span></h2>
+                        <div class="border-down"></div>
+                        <p class="text text-black small-text px-5 py-3" id="mtt2"><span id="communicate">
+                          <span id="one">  1. Begin by downloading the official website at </span><a href="https://www.milpoker.com/downLoad"> http://www.milpoker.com</a><br>
+                          <span id="two">  2. Register an account on the website.</span><br>
+                           <span id="three"> 3. Click the "+" button under the "Clubs" section to apply for a club.</span><br>
+                           <span id="four"> 4. Use the League ID: 1002.</span><br>
+                          <span id="five">  5. The rake will be 3%, capped at 3 big blinds (BB).</span><br>
+                           <span id="six"> 6. Club owners can receive 90% of the service fees generated from each game and 50% of the insurance fees paid by players as profits. (Note: The club needs to deposit a minimum of 5000 as collateral to be able to provide insurance. Otherwise, insurance services will not be available.)</span><br>
+                           <span id="seven"> 7. Access the back-end website at club.milpoker.com/index.html.</span>
+
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                      <div class="my-md-5" style="margin-top: 0.7rem;">
+                        <h2 class="text-center text-black my-font" id="mtt"><span id="clubOwner">For Club Owners</span></h2>
+                        <div class="border-down"></div>
+                        <p class="text text-black small-text px-5 py-3" id="mtt2"><span id="communicate">
+                           <span id="eight"> -The club needs to meet 10 members.</span><br>
+                           <span id="nine"> -The minimum deposit amount of the club is 5,000 php peso.</span><br>
+                           <span id="ten"> -You can withdraw 1000 above, if its less than 1000 you cannot withdraw.</span><br>
+                           <span id="eleven"> -If there are more than 10 active member, we will upgrade your club for free for limited time only.</span>
+
+
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col" style="display: flex; flex-direction:column; justify-content: center">
+                      <div class="my-md-5" style="margin-top: 0.7rem;">
+                        <h2 class="text-center text-black my-font" id="mtt"><span id="clubInfo">Club Owner Info</span></h2>
+                        <div class="border-down"></div>
+                        <p class="text text-black small-text px-5 py-3" id="mtt2"><span id="communicate">
+                           <span id="twelve"> Please provide the following info:</span><br>
+                            <br>
+                           <span id="thirth"> 1.Mobile Number :</span><br>
+                           <span id="fourth"> 2.Email Address :</span> <br>
+                           <span id="fifth"> 3.Facebook :</span><br>
+                           <span id="sixth"> 4.Club Name :</span><br>
+                           <span id="egtht"> 5.Club I.D :</span><br>
+                           <span id="ninent"> So we can contact you in time if you have any problems in the future.</span><br>
+                           <span id="tent"> If you have any questions, you can ask us in this group in the future, and we can solve them conveniently.</span>
+
+
+
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <div class="col-lg-6 mb-4">
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+          </div>
+          <!-- End of Main Content -->
+
+          <!-- Footer -->
+          <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+              <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Ace Advantage</span>
+              </div>
+            </div>
+          </footer>
+          <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+      </div>
+      <!-- End of Page Wrapper -->
+
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+      </a>
+
+      <!-- Logout Modal-->
+      <%- include('includes/logout_modal.ejs') %>
+
+      <%- include('includes/footer.ejs') %>

@@ -1,0 +1,178 @@
+<%- include('includes/header.ejs') %>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <%- include('includes/sidebar.ejs') %>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <%- include('includes/topbar.ejs') %>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800" id="managementApp">Management Approval</h1>
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item my-auto">
+                            <a class="m-lg-4 my-font text-black text-center" aria-current="page" href="#">
+                              <select id="languageSelect" onchange="managementApp()" style="border:none">
+                                <option value="en">English</option>
+                                <option value="chi">Chinese</option>
+                              </select>
+                            </a>
+                          </li>
+                          </ul>
+                      
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+
+
+
+
+                            <div class="d-flex justify-content-center align-items-center h-90">
+                                <div class="rounded shadow m-3 container">
+                                  <!-- <img src="img/MTT.png" height="250" class="mtt" alt="MTT"> -->
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <div class="row justify-content-center" style="margin-top:2rem;">
+                                        <div class="col-md-auto align-self-center">
+                                          <div class="row justify-content-center btn-des">
+                                         <a href="https://www.facebook.com/aceadvantagee"><button class="button-6" data-bs-toggle="modal"><span id="facebook"> Facebook</span></button></a>
+                                         <a href="https://msng.link/o?639691312345=vi"><button class="button-6" data-bs-toggle="modal" ><span id="viber">Viber</span></button></a> 
+                                         <a href="https://web.telegram.org/a/#6284178283"> <button class="button-6" data-bs-toggle="modal" ><span id="telegram" >Telegram</span></button></a> 
+                                          </div>
+                                        </div>
+                                    
+                                    
+                                    
+                                    
+                                      </div>
+                                    <div class="col" style="display: flex; flex-direction:column; justify-content: center" >
+                                      <div class="my-md-5"style="margin-top: 0.7rem;">
+                                        <h2 class="text-center text-black my-font" id="mtt"><span id="messageUs">Message Us</span></h2>
+                                        <div class="border-down"></div>
+                                        <p class="text-center text-black small-text px-5 py-3" id="mtt2"><span id="communicate">
+                                         If you want to be a club owner click the button on top to communicate in the Ace Advantage marketing team</span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <style>
+                                
+
+
+
+/* css */
+                        .button-6 {
+                          align-items: center;
+                          margin:.5rem;
+                          background-color: #FFFFFF;
+                          border: 1px solid rgba(0, 0, 0, 0.1);
+                          border-radius: .25rem;
+                          box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+                          box-sizing: border-box;
+                          color: rgba(0, 0, 0, 0.85);
+                          cursor: pointer;
+                          display: inline-flex;
+                          font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+                          font-size: 16px;
+                          font-weight: 600;
+                          justify-content: center;
+                          line-height: 1.25;
+                          
+                          min-height: 3rem;
+                          padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+                          position: relative;
+                          text-decoration: none;
+                          transition: all 250ms;
+                          user-select: none;
+                          -webkit-user-select: none;
+                          touch-action: manipulation;
+                          vertical-align: baseline;
+                          width: auto;
+                        }
+                        
+                        .button-6:hover,
+                        .button-6:focus {
+                          border-color: rgba(0, 0, 0, 0.15);
+                          box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+                          color: rgba(0, 0, 0, 0.65);
+                        }
+                        
+                        .button-6:hover {
+                          transform: translateY(-1px);
+                        }
+                        
+                        .button-6:active {
+                          background-color: #F0F0F1;
+                          border-color: rgba(0, 0, 0, 0.15);
+                          box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+                          color: rgba(0, 0, 0, 0.65);
+                          transform: translateY(0);
+                        }
+                        
+                        
+                                                      
+                        
+                        
+
+                            </style>
+                   
+                       
+                    </div>
+
+                        <div class="col-lg-6 mb-4">
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Ace Advantage</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <%- include('includes/logout_modal.ejs') %>
+
+    <%- include('includes/footer.ejs') %>
